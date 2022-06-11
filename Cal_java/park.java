@@ -1,3 +1,5 @@
+package Cal_java;
+
 import java.util.Scanner;
 
 public class park {

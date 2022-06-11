@@ -1,0 +1,58 @@
+{
+    "version": "2.0.0",
+    "isBackground": true,
+     "tasks": [
+       {
+          "label": "build",
+          "type": "shell",
+          "command": "c:/Program Files/Java/jdk1.8.0_121/bin/javac.exe",
+          "args": [
+             "-g",
+             "${file}"
+          ],
+          "problemMatcher": [],
+          "group": {
+             "_id": "build",
+             "isDefault": false
+          }
+       },
+       {
+          "label": "build-gradle",
+          "type": "shell",
+          "command": "c:/Program Files/gradle/gradle-3.4/bin/gradle.bat",
+          "args": [
+             "compileJava"
+          ],
+          "problemMatcher": [],
+          "group": {
+             "_id": "build",
+             "isDefault": true
+          }
+       },
+       {
+          "type": "java",
+          "targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+          "elements": [
+             "${compileOutput}",
+             "${dependencies}"
+          ],
+          "problemMatcher": [],
+          "label": "java: exportjar:Java_Practice",
+          "group": "build"
+       },
+       {
+          "type": "java",
+          "targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+          "elements": [
+             "${compileOutput}",
+             "${dependencies}"
+          ],
+          "problemMatcher": [],
+          "label": "java: exportjar:Java_Practice",
+          "group": {
+             "kind": "build",
+             "isDefault": true
+          }
+       }
+    ]
+ }

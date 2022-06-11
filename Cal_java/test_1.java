@@ -1,3 +1,5 @@
+package Cal_java;
+
 import java.util.Scanner;
 
 public class test_1 {
@@ -6,7 +8,6 @@ public class test_1 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        sc.close();
 
         System.out.println(a + b);
     }
